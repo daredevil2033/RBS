@@ -1,0 +1,21 @@
+LED A - Green - Read - Write
+LED B - Red - Emulate /
+LED C - Amber - Validate
+LED D - Blue
+
+DEFAULT - Read
+
+FROM READ
+	DOUBLE CLICK - Wipe
+
+AFTER READ - Emulate
+
+FROM EMULATE
+	CLICK - Write
+	DOUBLE CLICK - Validate
+	HOLD - Read
+
+FROM VALIDATE
+	CLICK - Emulate
+	LED C - Success
+	ALL LED - Failure
